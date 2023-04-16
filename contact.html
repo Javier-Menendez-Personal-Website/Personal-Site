@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+    
 </head>
 <body style="background-color: black;">
-   
+       
     <header>
         
 
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                
             </ul>
         </nav>
+
 
         <div id="links">
             
             <ul>
                 <li><b style="color: azure;">Javier M.</b></li>
                 
-
             </ul>
         </div>
             
     </header>
 
-    <div id="title-1">ABOUT</div>
-<main>
-        <div id="card">
-            <div class="card">
-                <div class="card-front"><img src="card1.png" /></div>
-                <div class="card-back"><img src="card2.png" /></div>
-            </div>
-        </div>
-</main>
+    <div id="title-1">CONTACT ME</div>
+    <div id="main1">
+         <form id="form">
+            <label style="color: azure;">Name</label>
+            <input id="name" type="text">
+            <label style="color: azure;">Email</label>
+             <input id="email" type="email">
+            <label style="color: azure;">Message</label>
+            <textarea id="Message" rows="15" cols="60"></textarea>
+            <button id="submit" type="submit">submit</button>
+        </form>
+        <script src="form.js"></script>
+    </div>
 
 <footer>
     <div class="footer-content">

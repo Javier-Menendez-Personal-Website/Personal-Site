@@ -28,14 +28,9 @@ header {
 
 #links li {
     align-items: center;
-    transition: all 1s;
-}
-
-#links li:hover {
-    transition: all 1s;
-    transform: scale(1.3);
     
 }
+
 
 nav {
     display: flex;
@@ -53,7 +48,7 @@ header li {
     padding: 0 20px;
 }
 
-header a {
+.navbar a {
     justify-content: flex-end;
     text-decoration: none;
     color: azure;
@@ -62,12 +57,12 @@ header a {
 }
 
 
-header a:hover {
+.navbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
-header a.active {
+.navbar a.active {
     background-color: rgb(98, 23, 197);
     color: white;
 }
@@ -189,6 +184,14 @@ header a.active {
     
   }
 
+main {
+    display: flex;
+    padding-right: 700px;
+    justify-content: center;
+    
+}
+    
+
 .card {
     
     width: 25px;
@@ -215,4 +218,81 @@ header a.active {
 
 .card:hover .card-back {
     transform: rotateY(0);
+}
+
+#main1 {
+    display: flex;
+    justify-content: center;
+}
+ 
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#name, #email {
+    width: 200px;
+ 
+    
+}
+
+input, button, textarea {
+    margin: 5px;
+    
+}
+
+#submit {
+    width: 100px;
+    align-self: center;
+    
+}
+
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    height: auto;   
+    padding-top: 5px;
+    color: #fff;
+    box-shadow: 0 3px 8px rgb(98, 23, 197);
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.links li {
+    align-items: center;
+    transition: all 1s;
+    margin: 0 10px;
+ 
+}
+
+.links li:hover {
+    transition: all 1s;
+    transform: scale(1.3);
+    
+}
+
+
+#footer {
+    position: sticky;
 }
